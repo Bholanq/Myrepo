@@ -1,0 +1,65 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(233, 233, 247);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 100%;
+    background-color: rgb(78, 74, 162)
+;
+display: flex;
+justify-content: space-around;
+padding: 0.6cm, 0.3em;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+}
+
+#brand{
+    color: rgb(255, 255, 255);
+    align-self: center;
+    font-weight: bold;
+    font-size: 230%;
+    padding: 0.5em;
+}
+
+header form{
+    color: white;
+    margin-left: 35%;
+
+}
+header form ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 0%;
+    margin-bottom: 0%;
+}
+
+header form li{
+    align-self: flex-start;
+    padding: 0.2em 0.5em;
+    font-size: small;
+    font-weight: 500;
+}
+
+header form input{
+    margin-bottom:  0.2em;
+    height: 18px;
+}
+
+header form input[type = "submit"]{ 
+    background-color: #4367b2;
+    border: 1px solid rgb(58, 58, 171);
+    color: white;
+    height: 24px;
+    margin-top: 28%;
+    cursor: pointer;
+
+}
+
