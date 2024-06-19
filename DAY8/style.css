@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+nav ul{
+    list-style-type: none;
+   
+}
+
+nav{
+    background-color: #000000;
+    color: aliceblue;
+    height: 65px;
+    font-size: 20px;
+    align-items: center;
+    display: flex;
+    font-family: 'Noto Sans';
+}
+
+
+.gamecontainer{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.container{
+    display: flex ;
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 9vw;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+}
+
+.box:hover{
+    background-color: rgb(183, 150, 213);
+}
+
+.gameinfo{
+    padding: 0 3vw;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.imgbox img{
+    width: 0;
+    transition:width 1s ease-in-out;
+
+}
+
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0 ;
+}
+
+#reset{
+    margin: 10px;
+    padding: 16px;
+    border-radius: 10px;
+    cursor: pointer ;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 800px) {
+   .gamecontainer{
+    flex-wrap: wrap;
+   }
+
+   .gameinfo{
+    margin-top: 34px;
+   }
+
+   .container{
+    display: flex ;
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+
+}
+    .gameinfo h1{
+        font-size: 2.5rem;
+    }
+
+  }
